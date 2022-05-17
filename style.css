@@ -1,11 +1,16 @@
-@import url();
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 *{
     text-decoration: none;
+    margin: 0 ;
+    padding :0;
+    box-sizing: border-box;
 }
 body{
-    background-size: 100%;
-    margin: auto;
+    background-size: cover;
     display: flex;
+    background-image: url("section1.png");
+
+    
     
 }
 .header{
@@ -16,35 +21,32 @@ body{
     color: white;
     text-align: center;
     border-bottom: 0.5vh solid yellow;
-
+    position: absolute;
 }
 .container{
     margin-top: 0;
 }
 #i_imagem{
     display: flex ;
-    margin-left: 3vw;
-    position: absolute;
-    height: 15vh;
-    width: 10vw;
+     top: -10vh;
+     left: 6vw;
+    position: relative;
+    height: 35vh;
+    width: 15vw;
 }
-#i_wiki{
-    background-color:  rgb(232, 156, 36, 1);
-    height: 15vh;
-}
+
 .navbar{
     
     justify-self: space-around;
-    position: absolute;
+    
+    position: relative;
     list-style: none;
     margin-top: 5px;
-    padding: 3%;
-
-    padding-left: 65vw;
+    top: -25vh;
+    padding-left: 55vw;
     font-weight: 800;
     font-size: larger;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+font-family: Anonymous Pro;    
 
 }
 #home:hover{
@@ -70,6 +72,25 @@ body{
 
 
 } 
+.Sessao1{
+  margin-top: 30vh;
+    
+}
+.Texto1{
+    border: 2px double white;
+    margin-top: 2vh;
+    color: white;
+    font-family: 'Anonymous Pro';
+}
+.Texto2{
+    color: white;
+  font-family: 'Anonymous Pro';
+font-weight: 1000;
+font-size: 35px;
+
+}
+
+
 
 
 

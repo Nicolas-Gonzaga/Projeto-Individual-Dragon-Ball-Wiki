@@ -16,7 +16,7 @@ body{
 .header{
     
     width: 100%;
-    height: 15vh;
+    height: 17vh;
     background-color: rgb(232, 156, 36, 1);
     color: white;
     text-align: center;
@@ -42,32 +42,45 @@ body{
     position: relative;
     list-style: none;
     margin-top: 5px;
-    top: -25vh;
+    top: -28vh;
     padding-left: 55vw;
     font-weight: 800;
     font-size: larger;
 font-family: Anonymous Pro;    
 
 }
+#home{
+    color:white
+}
+#cadastro{
+    color: white;
+}
+#login{
+    color: white;
+}
 #home:hover{
-    transition: all 2 ease-in;
+    transition: all 0.6s ease-in;
     text-decoration: underline; 
     text-decoration-style: solid;
     font-size: x-large;
+    color: darkred;
 
 
 } 
 #cadastro:hover{
-    transition: all 2 ease-in;
+    transition: all 0.6s ease-in;
     text-decoration: underline; 
     text-decoration-style: solid;
-    font-size: x-large;;
+    font-size: x-large;
+    color: darkred;
 
 } 
 #login:hover{
-    transition: all 2 ease-in;
+    color: darkred;
+    transition: all 0.6s ease-in;
+    transform: scale(1.1);
     text-decoration: underline; 
-    text-decoration-style: solid;
+    text-decoration-style: solid ;
     font-size: x-large;
 
 

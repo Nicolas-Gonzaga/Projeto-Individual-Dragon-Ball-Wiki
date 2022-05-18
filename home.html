@@ -10,14 +10,16 @@
 </head>
 <body>
     <header class="header">
+        <button onclick="musicahome()"></button>
+        <audio src="musicahome.mp3" id="musicahome" preload loop></audio>
         <div class="container">
         <img src="logoo.png" id="i_imagem">
             
             <nav class="navbar">
 
-            <a style="color: white;" id="home" href="home.html" class="nav">Home </a> &nbsp; &nbsp;
-            <a style="color: white;" id="cadastro" href="cadastro.html"class="nav">Cadastro  </a> &nbsp; &nbsp;
-            <a style="color: white;"id="login" href="login.html"class="nav">Login  </a> &nbsp; &nbsp;
+            <a  id="home" href="home.html" class="nav">Home </a> &nbsp; &nbsp;
+            <a  id="cadastro" href="cadastro.html"class="nav">Cadastro  </a> &nbsp; &nbsp;
+            <a  id="login" href="login.html"class="nav">Login  </a> &nbsp; &nbsp;
             </nav>
         </div>
     </header>
@@ -36,3 +38,9 @@
     
 </body>
 </html>
+<script>
+    function musicahome(){
+        const audio = document.getElementById('musicahome');
+                    audio.play();
+    }
+</script>

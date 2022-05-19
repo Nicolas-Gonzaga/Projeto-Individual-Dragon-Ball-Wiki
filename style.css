@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https: //fonts.googleapis.com/css2? family= Amiko:wght@400;600;700 & family= BioRhyme:wght@400;700;800 & display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,700&family=Oxygen:wght@300;400;700&family=Zilla+Slab:ital,wght@0,300;0,400;1,300&display=swap');
+
+
 *{
     text-decoration: none;
     margin: 0 ;
@@ -43,12 +44,12 @@ body{
     
     position: relative;
     list-style: none;
-    margin-top: 5px;
+    margin-top: 1vh;
     top: -28vh;
     padding-left: 55vw;
     font-weight: 800;
     font-size: larger;
-font-family: Anonymous Pro;    
+    font-family: Anonymous Pro;    
 
 }
 #home{
@@ -91,35 +92,54 @@ font-family: Anonymous Pro;
 .Sessao1{
   margin-top: 0;
   height: 100vh;
-  width: 119%;
-  background-image: url("section1.png");
+  width: 121%;
+  background-image: url('section1.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: darken;
+  opacity: 100;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
-  .Texto1{
+
+.Sessao2{
+    border-top: 5px solid white;
+    height: 80vh;
+    width: 121%;
+    background-image: url("section2.jpg");
+    background-size: cover;
+}
+  .Texto2{
       margin-top: 20vh;
-      color: rgb(247, 22, 6);
-    font-family: 'Anonymous Pro';
+      color: rgb(250, 249, 249);
+    font-family: Oxygen;
   font-weight: 1000;
   font-size: 35px;
   margin-left: 2vw;
   
   
 }
-.Texto2{
-    width: 35vw;
+.Texto1{
+    display: block;
+    width: 80vw;
     margin-left: 2vw;
-    border:  solid white;
-    border-width: 0.2vw;
-    
     margin-top: 2vh;
-    color: rgb(255, 34, 5);;
-    font-family: 'Anonymous Pro';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 20vw;
+    font-family: Zilla Slab;
     font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
 }
-.Texto2:hover{
+#textosection1{
+    text-decoration: none;
+    color: rgb(255, 252, 251);;
+}
+.Texto1:hover{
     transition: all 1s ease-in;
     transform: scale(1.1);
 
@@ -128,22 +148,31 @@ font-family: Anonymous Pro;
 .textoprincipal{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
     text-align: justify;
     width: 55vw;
-    margin-left: 28vw;
-    font-family: cursive;
+    margin-left: 25vw;
+    font-family: Oxygen;
     font-size: 300%;
     color: white;
     margin-top: 17vh;
     
+}
+.texto3{
+    width: 20vw;
+    font-size: large;
+    font-family: Amiko;
+    padding-top: 2%;
+
 }
 .button{
     border-radius: 15px;
     width: 5vw;
     background-color: rgba(232, 157, 36, 0);
     color: rgb(255, 34, 5);;
-    border: 2px solid rgb(10, 10, 10);
-    font-family: 'Amiko';
+    border: 2px solid rgba(10, 10, 10, 0.199);
+    font-family: Amiko;
     height: 2%;
 }
 #btn_saibamais:hover{

@@ -16,32 +16,48 @@
             
             <nav class="navbar">
 
-            <a  id="home" href="home.html" class="nav">Home </a> &nbsp; &nbsp;
+            <a  id="home" href="index.html" class="nav">Home </a> &nbsp; &nbsp;
             <a  id="cadastro" href="cadastro.html"class="nav">Cadastro  </a> &nbsp; &nbsp;
             <a  id="login" href="login.html"class="nav">Login  </a> &nbsp; &nbsp;
             </nav>
         </div>
     </header>
     <section class="sessaocadastro">
+        <div class="img">
+            <img src="../public/assets/imgs/cadastro.png" id="i_img">
+        </div>
         <div class="card">
-            <h1>Cadastre-se já!</h1>
+            <h1 class="titulocadastro">Cadastre-se já!</h1> <br> <br>
             <span class="tipo_campo">Nome</span> <br>
-            <input id="nome_input" type="text" placeholder="Seu nome"> <br> <br>
+            <input class="i_cad" id="nome_input" type="text" placeholder="Seu nome"> <br> <br>
 
             <span class="tipo_campo">E-mail</span> <br>
-            <input id="email_input" type="text" placeholder="meuemail@provedor.com"><br> <br>
+            <input class="i_cad" id="email_input" type="text" placeholder="meuemail@provedor.com"><br> <br>
 
             <span class="tipo_campo">Senha</span> <br>
-            <input id="senha_input" type="password" placeholder="******"><br> <br>
+            <input  class="i_cad" id="senha_input" type="password" placeholder="******"><br> <br>
 
             <span class="tipo_campo">Confirmação da Senha:</span> <br>
-            <input id="confirmacao_senha_input" type="password" placeholder="******"><br> <br>
+            <input class="i_cad" id="confirmacao_senha_input" type="password" placeholder="******"><br> <br>
+            <span class="tipo_campo">  Qual a sua transformação favorita?</span> <br>
+            <select  id="i_cad">
+                <option value="0">--</option>
+                <option value="SSJ1">Super Saiyajin</option>
+                <option value="SSJ2">Super Saiyajin 2</option>
+                <option value="SSJ3">Super Saiyajin 3</option>
+                <option value="SSJ4">Super Saiyajin 4</option>
+                <option value="SSJGOD">Super Saiyajin God</option>
+                <option value="SSJBLUE">Super Saiyajin Blue</option>
+                <option value="UI">Instinto Superior</option>
+            </select>
+             <br> <br>
 
-            <button class="btn" onclick="cadastrar()">Cadastrar</button>
+            <button class="button" onclick="cadastrar()"
+            id="btn_cadastro">Cadastrar</button>
 
         </div>
         <div id="div_aguardar" class="loading-div">
-            <img src="./assets/circle-loading.gif" id="loading-gif">
+            <img src="./assets/loading.gif" id="loading-gif">
         </div>
 
         <div id="div_erros_login">

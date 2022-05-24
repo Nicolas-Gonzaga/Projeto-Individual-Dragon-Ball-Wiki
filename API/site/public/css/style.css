@@ -7,8 +7,7 @@
     padding :0;
     box-sizing: border-box;
     
-}
-body{
+}body{
     height: 100%;
     width: 100%;
     display: flex;
@@ -191,6 +190,24 @@ footer{
     text-align: center;
     line-height: 100px;
 }
+.sessaocadastro{
+    display: flex;
+    background: linear-gradient(rgba(250, 37, 9), #F27B35);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
 
 
-
+}
+.card{
+    height: 60vh;
+    width: 25%;
+    margin-top: 2%;
+    text-align: center;
+    
+    background-color: #FFF;
+    position: absolute;
+}

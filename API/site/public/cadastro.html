@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cadastrar</title>
 </head>
 <body>
@@ -42,13 +42,13 @@
             <span class="tipo_campo">  Qual a sua transformação favorita?</span> <br>
             <select  id="sel_transf">
                 <option value="0">--</option>
-                <option value="SSJ1">Super Saiyajin</option>
-                <option value="SSJ2">Super Saiyajin 2</option>
-                <option value="SSJ3">Super Saiyajin 3</option>
-                <option value="SSJ4">Super Saiyajin 4</option>
-                <option value="SSJGOD">Super Saiyajin God</option>
-                <option value="SSJBLUE">Super Saiyajin Blue</option>
-                <option value="UI">Instinto Superior</option>
+                <option value="1">Super Saiyajin</option>
+                <option value="2">Super Saiyajin 2</option>
+                <option value="3">Super Saiyajin 3</option>
+                <option value="4">Super Saiyajin 4</option>
+                <option value="5">Super Saiyajin God</option>
+                <option value="6">Super Saiyajin Blue</option>
+                <option value="7">Instinto Superior</option>
             </select>
              <br> <br>
 
@@ -80,7 +80,7 @@
 
 <script>
 function cadastrar() {
-aguardar();
+
 
 //Recupere o valor da nova input pelo nome do id
 // Agora vá para o método fetch logo abaixo
@@ -93,12 +93,9 @@ var transformacaoVar = sel_transf.value
 if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || sel_transf.value == "0") {
    alert('Preencha todos os campos para prosseguir!')
 
-    finalizarAguardar();
-    return false;
+ 
 }
-else {
-    setInterval(sumirMensagem, 5000)
-}
+
 
 // Enviando o valor da nova input
 fetch("/usuarios/cadastrar", {
@@ -122,25 +119,21 @@ fetch("/usuarios/cadastrar", {
 alert('Cadastro realizado com sucesso!')
        
         setTimeout(() => {
-            window.location = "login.html";
+            window.location.href = "login.html";
         }, "2000")
         
-        limparFormulario();
-        finalizarAguardar();
+        
     } else {
         throw ("Houve um erro ao tentar realizar o cadastro!");
     }
 }).catch(function (resposta) {
     console.log(`#ERRO: ${resposta}`);
-    finalizarAguardar();
+  
 });
 
-return false;
+
 }
 
-function sumirMensagem() {
-cardErro.style.display = "none"
-}
 
 </script>
 

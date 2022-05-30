@@ -239,3 +239,27 @@ footer{
     height: 50px;
     width: 50px;
   }
+#logindiv{
+    height: 40%;
+    text-align: center;
+}
+#a_login{
+    text-decoration: none;
+    color: black;
+    font-family: Oxygen;
+    font-size: smaller;
+}
+#a_login:hover{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color: blue;
+}
+#sessaologin{
+    width: 100;
+}
+#i_imagem1{
+    top: -5vh;
+    left: -2vw;
+    height: 35vh;
+    width: 18vw;
+}

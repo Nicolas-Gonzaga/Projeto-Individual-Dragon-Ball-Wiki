@@ -5,7 +5,7 @@
 create database DragonBall;
 use DragonBall;
 create table transformacao(idTransformacao int primary key auto_increment,
-NomeTransformacao varchar(45));
+NomeTransformacao varchar(45) );
  insert into transformacao values 
  (null, 'Super Saiyajin'),
  (null, 'Super Saiyajin 2'),
@@ -18,9 +18,10 @@ NomeTransformacao varchar(45));
  
  create table usuario
  (idUsuario int primary key auto_increment,
- Nome varchar(45), Email varchar(45), Senha varchar(20));
+ Nome varchar(45), Email varchar(45), Senha varchar(20), fkTransformacao int, 
+foreign key (fkTransformacao) references Transformacao (idTransformacao));
  
-
+select * from usuario;
 
 /* para sql server - remoto - produção */
 create database DragonBall;

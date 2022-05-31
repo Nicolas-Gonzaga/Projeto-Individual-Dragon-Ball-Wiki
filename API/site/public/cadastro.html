@@ -93,7 +93,11 @@ var transformacaoVar = sel_transf.value
 if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || sel_transf.value == "0") {
    alert('Preencha todos os campos para prosseguir!')
 
- 
+//  Usando vetor aqui
+} else if(emailVar.indexOf('@') == [-1] && emailVar.indexOf('.com') == [-1] ){
+    alert(`Um ou mais campos estão inválidos!`)
+} else if (confirmacaoSenhaVar != senhaVar){
+    alert(`As senhas não coincidem!`)
 }
 
 

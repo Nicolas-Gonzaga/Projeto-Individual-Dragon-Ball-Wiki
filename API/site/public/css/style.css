@@ -181,6 +181,12 @@
     background-color: rgb(232, 156, 36, 1);
     cursor: pointer;
 }
+#botaologin:hover{
+    transition: all 1s ease-in;
+    transform: scale(1.1);
+    background-color: rgb(232, 156, 36, 1);
+    cursor: pointer;
+}
 footer{
     position: fixed;
     bottom: 0;

@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
+    background: linear-gradient(rgba(250, 37, 9), #F27B35);
   }
   
   .container {
@@ -256,8 +255,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-right: 3px solid #32b9cd;
-    background-color: #212124;
+    border-right: 3px solid yellow;
+    background-color: rgb(232, 156, 36, 1);
     /* border: 3px solid pink; */
   }
   
@@ -282,13 +281,14 @@ body {
   }
   
   .hello h3 {
-    color: #e3b062;
-    font-weight: 300;
-    font-size: 1.2rem;
-  }
+    color: #fff;
+    font-weight: 800;
+font-family: Oxygen;  }
   
   .hello h3 span {
-    font-weight: 800;
+    font-weight: 2000;
+    color: #FFFF;
+    font-family: Oxygen;
   }
   
   .btn-nav {
@@ -303,14 +303,14 @@ body {
   .btn-nav-white {
     width: 40%;
     background-color: white;
-    border: 3px solid #e6005a;
+    border: 3px solid #f80b03;
     border-radius: 5px;
     text-align: center;
     padding: 2% 5%;
   }
   
   .btn-nav-white h3 {
-    color: #e6005a;
+    color: rgb(250, 115, 4);
     padding: 0;
     margin: 0;
   }

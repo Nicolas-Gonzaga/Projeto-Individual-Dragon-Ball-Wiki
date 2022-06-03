@@ -31,7 +31,7 @@
 
 #i_imagem{
     display: flex ;
-     top: -10vh;
+     top: -9vh;
      left: 6vw;
     position: relative;
     height: 35vh;
@@ -45,7 +45,25 @@
     position: relative;
     list-style: none;
     margin-top: 1vh;
-    top: -28vh;
+    top: -26vh;
+    padding-left: 55vw;
+    font-weight: 800;
+    font-size: larger;
+    font-family: Anonymous Pro;    
+
+}
+.sessaocur1{
+    background-image: url("../assets/imgs/sessaocur1.jpg");
+    background-size: cover;
+}
+.navbar1{
+    
+    justify-self: space-around;
+    
+    position: relative;
+    list-style: none;
+    margin-top: 1vh;
+    top: -24vh;
     padding-left: 55vw;
     font-weight: 800;
     font-size: larger;
@@ -59,6 +77,9 @@
     color: white;
 }
 #login{
+    color: white;
+}
+#curiosidades{
     color: white;
 }
 #home:hover{
@@ -89,6 +110,14 @@
 
 
 } 
+#curiosidades:hover{
+    transition: all 0.6s ease-in;
+    transform: scale(1.1);
+    text-decoration: underline; 
+    text-decoration-style: solid ;
+    font-size: x-large;
+    color: darkred;
+}
 .Sessao1{
   margin-top: 0;
   height: 100vh;
@@ -101,6 +130,13 @@
   position: relative;
   justify-content: center;
   align-items: center;
+}
+.Sessao1cur{
+margin-top: 17vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/imgs/sessaocur1.jpg");
+    background-size: cover;
 }
 
 .Sessao2{
@@ -222,6 +258,13 @@ footer{
 #i_img{
     height: 40%;
     width: 30%;
+    margin-top: 3%;
+    margin-left: 60%;
+}
+#i_img1{
+    height: 40%;
+    width: 30%;
+    margin-top: 3%;
     margin-left: 80%;
 }
 .tipo_campo{
@@ -277,8 +320,12 @@ h2{
     font-family: Glory;
     color: white;
 }
-#canvas_grafico:hover{
- transition: all 0.8s ease-in;   
+
+#canvas_grafico {
+    transition: all 0.8s ease-in-out;
+}
+
+#canvas_grafico:hover{   
 transform: scale(1.1);
 }
 #b_usuario{

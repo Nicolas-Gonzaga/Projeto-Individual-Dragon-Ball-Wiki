@@ -24,7 +24,7 @@
     </header>
     <section class="sessaocadastro">
         <div class="img">
-            <img src="../assets/imgs/cadastro.png" id="i_img">
+            <img src="../assets/imgs/cadastro.png" id="i_img1">
         </div>
         <div class="card">
             <h1 class="titulocadastro">Cadastre-se já!</h1> <br> <br>
@@ -79,26 +79,32 @@
 </html>
 
 <script>
-function cadastrar() {
-
-
-//Recupere o valor da nova input pelo nome do id
-// Agora vá para o método fetch logo abaixo
-var nomeVar = nome_input.value;
-var emailVar = email_input.value;
-var senhaVar = senha_input.value;
-var confirmacaoSenhaVar = confirmacao_senha_input.value;
-var transformacaoVar = sel_transf.value
-
-if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || sel_transf.value == "0") {
-   alert('Preencha todos os campos para prosseguir!')
+    function cadastrar() {
+        
+        
+        
+        
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var transformacaoVar = sel_transf.value
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || sel_transf.value == "0") {
+            alert('Preencha todos os campos para prosseguir!')
+            return false
+        } else if(emailVar.indexOf('@') == [-1] && emailVar.indexOf('.com') == [-1] ){
+            alert(`Um ou mais campos estão inválidos!`)
+            return false
+        } else if (confirmacaoSenhaVar != senhaVar){
+            alert(`As senhas não coincidem!`)
+            return false
+        }
+    
+        
 
 //  Usando vetor aqui
-} else if(emailVar.indexOf('@') == [-1] && emailVar.indexOf('.com') == [-1] ){
-    alert(`Um ou mais campos estão inválidos!`)
-} else if (confirmacaoSenhaVar != senhaVar){
-    alert(`As senhas não coincidem!`)
-}
 
 
 // Enviando o valor da nova input
@@ -121,15 +127,15 @@ fetch("/usuarios/cadastrar", {
 
     if (resposta.ok) {
 alert('Cadastro realizado com sucesso!')
-       
-        setTimeout(() => {
-            window.location.href = "login.html";
-        }, "2000")
-        
-        
-    } else {
-        throw ("Houve um erro ao tentar realizar o cadastro!");
-    }
+
+setTimeout(() => {
+    window.location.href = "login.html";
+}, "2000")
+
+
+} else {
+    throw ("Houve um erro ao tentar realizar o cadastro!");
+}
 }).catch(function (resposta) {
     console.log(`#ERRO: ${resposta}`);
   

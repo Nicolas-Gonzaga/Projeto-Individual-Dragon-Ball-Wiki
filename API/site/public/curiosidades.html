@@ -15,7 +15,7 @@
         <div class="container">
             <img src="../assets/imgs/logoo.png" id="i_imagem">
 
-            <nav class="navbar1">
+            <nav class="navbar" id="navbar1">
                 <a id="home" href="index.html" class="nav">Home </a> &nbsp; &nbsp;
                 <a id="cadastro" href="cadastro.html" class="nav">Cadastro </a> &nbsp; &nbsp;
                 <a id="login" href="login.html" class="nav">Login </a> &nbsp; &nbsp;
@@ -24,15 +24,31 @@
         </div>
     </header>
 
+
+    <section class="Sessao1cur">
+        <img src="../assets/imgs/logodbz.png" id="i_imagemcur">
+       <div class="textocur1"> <strong><span id="frase1cur">Após o grande embate entre Goku e Piccolo, a paz voltou a reinar na terra. Entretanto,
+        um misterioso alienígena invadiu o planeta atrás de goku, dizendo ser seu irmão e dizendo que goku era um
+        saiyajin.
+        Goku trava uma grande batalha contra esse alienígena chamado Raditz, e após isso, as lutas nunca mais cessaram,
+        assim como o seu desejo de ficar cada vez mais forte. </strong> </span>
+    </div>
+    <div class="insight"> 
+        <span>Ficou curioso para saber o desenrolar da história? <br> Clique no botão abaixo e comece a assistí-la!</span> <br>
+    <button class ="but"onclick="Mudar()">Saiba mais</button>
+    <div onclick="musicahome()" id="triangulo-para-direita"></div>
+    <audio src="../assets/Músicas/musicahome.mp3" id="musicahome" preload loop></audio>    
     
-        <section class="Sessao1cur">
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+    
 
-
-
-
-        </section> 
+    </section>
 
 </body>
 
 </html>
+<script>
+    function Mudar(){
+        window.location.href = "https://www.crunchyroll.com/pt-br/welcome?utm_source=paid_cr&utm_medium=google-search&utm_campaign=conversion&utm_term=crunchyroll&referrer=paid_cr_google-search_conversion&gclid=EAIaIQobChMIvZ2swbiZ-AIVAu6RCh1p4g6FEAAYASAAEgJSz_D_BwE"
+    }
+</script>

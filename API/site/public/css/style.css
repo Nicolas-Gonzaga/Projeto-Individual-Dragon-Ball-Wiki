@@ -19,7 +19,7 @@
     
 }
 .header{
-    
+    display: flex;
     width: 100%;
     height: 17vh;
     background-color: rgb(232, 156, 36, 1);
@@ -27,12 +27,16 @@
     text-align: center;
     border-bottom: 0.5vh solid yellow;
     position: absolute;
+    justify-content: center;
+}
+#navbar1{
+    margin-top: 2.5vh;
 }
 
 #i_imagem{
     display: flex ;
      top: -9vh;
-     left: 6vw;
+     left: 4vw;
     position: relative;
     height: 35vh;
     width: 15vw;
@@ -53,8 +57,11 @@
 
 }
 .sessaocur1{
+   
+  
     background-image: url("../assets/imgs/sessaocur1.jpg");
     background-size: cover;
+    
 }
 .navbar1{
     
@@ -132,11 +139,13 @@
   align-items: center;
 }
 .Sessao1cur{
-margin-top: 17vh;
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/imgs/sessaocur1.jpg");
+    background-image: url("../assets/imgs/sessaocur1.png");
+    margin-top: 15vh;
     background-size: cover;
+    opacity: 150%;
+    
 }
 
 .Sessao2{
@@ -331,3 +340,90 @@ transform: scale(1.1);
 #b_usuario{
     color: #ffff;
 }
+#triangulo-para-direita {
+    width: 0; 
+    height: 0;
+    display: flex; 
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fafafc;    
+    align-self: center;
+    top: 5%;
+    cursor: pointer;
+  }
+  .textocur1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+font-family: Oxygen;
+color: rgb(5, 5, 5);
+width: 45vw;
+height: 20vh;
+opacity:100%;
+z-index: 90;
+margin-top: 12vh;
+margin-left: 5%;
+top: 55vh;
+border-radius: 10px 0;
+text-align: justify;
+font-weight: 800;
+  
+}
+  .insight{
+margin-top: 13vh;
+margin-left: 5%;
+font-size: larger;
+font-family: Glory;
+font-weight: 800;
+
+width: 53%;
+opacity: 100%;
+
+  }
+  .textocur1:hover{
+      transition: all 1s ease-in;
+      transform: scale(1.1);
+      opacity: 85%;
+
+        
+  }
+#frase1cur{
+    opacity: 150%;
+    position: relative;
+    font-weight: 600;
+}
+.but{
+    background-color: orange;
+    border-radius: 20px 0;
+    border: 2px double;
+    
+    width:15vh;
+    cursor: pointer;
+
+
+
+}
+.but:hover{
+    transform: scale(1.1);
+      transition: all 1s ease-in-out;
+}
+      
+  .insight:hover{
+      transform: scale(1.1);
+      transition: all 1s ease-in-out;
+   opacity: 100%;   
+  }
+  #i_imagemcur{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5%;
+      height: 14vh;
+      width: 25vw;
+  }

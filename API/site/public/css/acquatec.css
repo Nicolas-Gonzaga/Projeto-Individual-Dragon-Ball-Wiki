@@ -306,7 +306,7 @@ font-family: Oxygen;  }
     border: 3px solid #f80b03;
     border-radius: 5px;
     text-align: center;
-    padding: 2% 5%;
+    padding:2% 3%;
   }
   
   .btn-nav-white h3 {
@@ -325,7 +325,7 @@ font-family: Oxygen;  }
     margin: 0;
     padding: 0;
     width: 20%;
-    background-color: #32b9cd;
+    background-color: #fa0808;
     color: white;
     border-radius: 10px;
     text-align: center;

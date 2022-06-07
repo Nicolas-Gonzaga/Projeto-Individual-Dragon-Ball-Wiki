@@ -24,31 +24,99 @@
         </div>
     </header>
 
+<main>
 
     <section class="Sessao1cur">
         <img src="../assets/imgs/logodbz.png" id="i_imagemcur">
-       <div class="textocur1"> <strong><span id="frase1cur">Após o grande embate entre Goku e Piccolo, a paz voltou a reinar na terra. Entretanto,
-        um misterioso alienígena invadiu o planeta atrás de goku, dizendo ser seu irmão e dizendo que goku era um
-        saiyajin.
-        Goku trava uma grande batalha contra esse alienígena chamado Raditz, e após isso, as lutas nunca mais cessaram,
-        assim como o seu desejo de ficar cada vez mais forte. </strong> </span>
-    </div>
-    <div class="insight"> 
-        <span>Ficou curioso para saber o desenrolar da história? <br> Clique no botão abaixo e comece a assistí-la!</span> <br>
-    <button class ="but"onclick="Mudar()">Saiba mais</button>
-    <div onclick="musicahome()" id="triangulo-para-direita"></div>
-    <audio src="../assets/Músicas/musicahome.mp3" id="musicahome" preload loop></audio>    
-    
-</div>
-    
-
-    </section>
-
-</body>
-
-</html>
+        <div class="textocur1"> <strong><span id="frase1cur">Após o grande embate entre Goku e Piccolo, a paz voltou a
+            reinar na terra. Entretanto,
+            um misterioso alienígena invadiu o planeta atrás de goku, dizendo ser seu irmão e dizendo que goku
+                    era um
+                    saiyajin.
+                    Goku trava uma grande batalha contra esse alienígena chamado Raditz, e após isso, as lutas nunca
+                    mais cessaram,
+                    assim como o seu desejo de ficar cada vez mais forte. </strong> </span>
+                    
+                </div>
+                <div class="insight">
+                    <span>Ficou curioso para saber o desenrolar da história? <br> Clique no botão abaixo e comece a
+                        assistí-la!</span> <br>
+                        <button class="but" onclick="Mudar()">Saiba mais</button>
+                    </div>
+                    <button class="musica1" id="music1" onclick="dbz()" >Tocar música
+                        
+                        <audio src="../assets/Músicas/musicasection1cur.mp3" id="musicacur" preload loop></audio> 
+                    </div>
+                    
+                    
+                    
+                </section>
+             
+       <section class="sessaocur2">
+           <img src="../assets/imgs/logodbgt.png" id="i_imagemcur2">
+           <div class="textocur1"> <strong><span id="frase1cur">Após o grande embate entre Goku e Piccolo, a paz voltou a
+               reinar na terra. Entretanto,
+               um misterioso alienígena invadiu o planeta atrás de goku, dizendo ser seu irmão e dizendo que goku
+               era um
+               saiyajin.
+               Goku trava uma grande batalha contra esse alienígena chamado Raditz, e após isso, as lutas nunca
+               mais cessaram,
+               assim como o seu desejo de ficar cada vez mais forte. </strong> </span>
+               
+            </div>
+            <div class="insight">
+                    <span>Ficou curioso para saber o desenrolar da história? <br> Clique no botão abaixo e comece a
+                        assistí-la!</span> <br>
+                        <button class="but" onclick="Mudar()">Saiba mais</button>
+                    </div>
+                    <button class="musica1" id="music2" onclick="musicacur()">Tocar música
+                        
+                        <audio src="../assets/Músicas/musicadbgt.mp3" id="musicacurio2" preload loop></audio> 
+                    </div>
+                </section>
+            </main>
+                
+            </body>
+            
+            </html>
 <script>
-    function Mudar(){
+    function Mudar() {
         window.location.href = "https://www.crunchyroll.com/pt-br/welcome?utm_source=paid_cr&utm_medium=google-search&utm_campaign=conversion&utm_term=crunchyroll&referrer=paid_cr_google-search_conversion&gclid=EAIaIQobChMIvZ2swbiZ-AIVAu6RCh1p4g6FEAAYASAAEgJSz_D_BwE"
     }
+    
+        var player = document.getElementById('musicacur'); // tag audio
+var button = document.getElementById('music1'); // botão play/pause
+var button1 = document.getElementById('music2'); // botão play/pause
+var player1 = document.getElementById('musicacurio2');
+function dbz(){
+function play() {
+    player.play();
+    button.textContent = "Pausar música";
+    button.style.width = "9vw"
+    player1.play();
+    button1.textContent = "Pausar música";
+    button1.style.width = "9vw"
+}
+
+function pause() {
+    player.pause();
+    button.textContent = "Reproduzir música";
+    button.style.width = "13vw"
+    player1.pause();
+    button1.textContent = "Reproduzir música";
+    button1.style.width = "13vw"
+}
+
+button.addEventListener('click', function(){
+    if (player.paused) {
+        play();
+    } else {
+        pause();
+    }
+    
+});
+}
+
+
+
 </script>

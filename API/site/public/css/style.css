@@ -56,12 +56,17 @@
     font-family: Anonymous Pro;    
 
 }
-.sessaocur1{
+.Sessaocur1{
    
-  
+
     background-image: url("../assets/imgs/sessaocur1.jpg");
     background-size: cover;
     
+    
+}
+main{
+    display:flex;
+    flex-direction: column;
 }
 .navbar1{
     
@@ -71,6 +76,7 @@
     list-style: none;
     margin-top: 1vh;
     top: -24vh;
+
     padding-left: 55vw;
     font-weight: 800;
     font-size: larger;
@@ -126,7 +132,7 @@
     color: darkred;
 }
 .Sessao1{
-  margin-top: 0;
+  margin-top: 17vh;
   height: 100vh;
   width: 121%;
   background-image: url("../assets/imgs/sessao1.jpg");
@@ -139,13 +145,13 @@
   align-items: center;
 }
 .Sessao1cur{
-    height: 100vh;
-    width: 100%;
+    height: 120vh;
+    width: 220%;
     background-image: url("../assets/imgs/sessaocur1.png");
     margin-top: 15vh;
     background-size: cover;
     opacity: 150%;
-    
+    border-bottom: 7px solid white;
 }
 
 .Sessao2{
@@ -366,7 +372,6 @@ color: rgb(5, 5, 5);
 width: 45vw;
 height: 20vh;
 opacity:100%;
-z-index: 90;
 margin-top: 12vh;
 margin-left: 5%;
 top: 55vh;
@@ -395,14 +400,14 @@ opacity: 100%;
   }
 #frase1cur{
     opacity: 150%;
-    position: relative;
+    position: static;
     font-weight: 600;
 }
 .but{
     background-color: orange;
     border-radius: 20px 0;
     border: 2px double;
-    
+    font-family: Anonymous Pro;
     width:15vh;
     cursor: pointer;
 
@@ -426,4 +431,63 @@ opacity: 100%;
       margin-top: 1.5%;
       height: 14vh;
       width: 25vw;
+  }
+  #triangulo-para-direita1 {
+    width: 0; 
+    height: 0;
+    display: flex; 
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #f81404;    
+    align-self: center;
+    margin-top: -10vh;
+    margin-left: 65%;
+    cursor: pointer;
+    flex-direction: row;
+   
+  }
+  .musica1{
+      display: flex;
+      position: absolute;
+      font-family: Anonymous Pro;
+      background-color: rgb(247, 141, 2);
+        justify-content: center;
+        margin-left: 80vw;
+        margin-top: -5vh;
+        padding-top: 7px;
+        color: rgb(7, 7, 7);
+     height: 5vh;
+      width:11vw;
+      border-radius: 15px ;
+      border: 2px double red;
+      cursor: pointer;
+  }
+  #music2{
+      margin-top: 55vh;
+      right: 9vw;
+      opacity: 80%;
+  }
+  .sessaocur2{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+  }
+  #i_imagemcur2{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+padding-right: 5vw;
+      justify-content: center;
+      margin-top: 1vh;
+      width: 28vw;
+      height: 25vh;
+  }
+  .sessaocur2{
+      background-image: url("../assets/imgs/sessao2cur.jpg");
+      height: 120vh;
+      margin-top: 0.5vh;
+      width: 220%;
   }

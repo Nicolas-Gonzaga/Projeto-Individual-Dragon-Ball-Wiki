@@ -19,7 +19,7 @@
                 <a id="home" href="index.html" class="nav">Home </a> &nbsp; &nbsp;
                 <a id="cadastro" href="cadastro.html" class="nav">Cadastro </a> &nbsp; &nbsp;
                 <a id="login" href="login.html" class="nav">Login </a> &nbsp; &nbsp;
-                <a id="curiosidades" href="curiosidades.html" class="nav">Curiosidades </a> &nbsp; &nbsp;
+                <a id="voltar" href="../dashboard/dashboard.html">Voltar à dashboard</a>
             </nav>
         </div>
     </header>
@@ -71,9 +71,31 @@
                     </div>
                     <button class="musica1" id="music2" onclick="musicacur()">Tocar música
                         
-                        <audio src="../assets/Músicas/musicadbgt.mp3" id="musicacurio2" preload loop></audio> 
+                        <audio src="../assets/Músicas/dbgt.mp3" id="musicacurio2" preload loop></audio> 
                     </div>
                 </section>
+                <section class="sessaocur3">
+                    <img src="../assets/imgs/logodbs.png" id="i_imagemcur2">
+                    <div class="textocur1"> <strong><span id="frase1cur">Após o grande embate entre Goku e Piccolo, a paz voltou a
+                        reinar na terra. Entretanto,
+                        um misterioso alienígena invadiu o planeta atrás de goku, dizendo ser seu irmão e dizendo que goku
+                        era um
+                        saiyajin.
+                        Goku trava uma grande batalha contra esse alienígena chamado Raditz, e após isso, as lutas nunca
+                        mais cessaram,
+                        assim como o seu desejo de ficar cada vez mais forte. </strong> </span>
+                        
+                     </div>
+                     <div class="insight">
+                             <span>Ficou curioso para saber o desenrolar da história? <br> Clique no botão abaixo e comece a
+                                 assistí-la!</span> <br>
+                                 <button class="but" onclick="Mudar()">Saiba mais</button>
+                             </div>
+                             <button class="musica1" id="music3" onclick="musicacur2()">Tocar música
+                                 
+                                 <audio src="../assets/Músicas/dbs.mp3" id="musicacurio3" preload loop></audio> 
+                             </div>
+                         </section>
             </main>
                 
             </body>
@@ -88,23 +110,20 @@
 var button = document.getElementById('music1'); // botão play/pause
 var button1 = document.getElementById('music2'); // botão play/pause
 var player1 = document.getElementById('musicacurio2');
+var button2 = document.getElementById('music3'); // botão play/pause
+var player2 = document.getElementById('musicacurio3');
 function dbz(){
 function play() {
     player.play();
     button.textContent = "Pausar música";
     button.style.width = "9vw"
-    player1.play();
-    button1.textContent = "Pausar música";
-    button1.style.width = "9vw"
 }
 
 function pause() {
     player.pause();
     button.textContent = "Reproduzir música";
     button.style.width = "13vw"
-    player1.pause();
-    button1.textContent = "Reproduzir música";
-    button1.style.width = "13vw"
+ 
 }
 
 button.addEventListener('click', function(){
@@ -115,6 +134,46 @@ button.addEventListener('click', function(){
     }
     
 });
+}
+function musicacur(){
+    function play() {
+    player1.play();
+    button1.textContent = "Pausar música";
+    button1.style.width = "9vw"
+}
+function pause(){
+    player1.pause();
+    button1.textContent = "Reproduzir música";
+    button1.style.width = "13vw"
+} 
+button1.addEventListener('click', function(){
+    if (player1.paused) {
+        play();
+    } else {
+        pause();
+    }
+    
+});  
+}
+function musicacur2(){
+    function play() {
+    player2.play();
+    button2.textContent = "Pausar música";
+    button2.style.width = "9vw"
+}
+function pause(){
+    player2.pause();
+    button2.textContent = "Reproduzir música";
+    button2.style.width = "13vw"
+} 
+button2.addEventListener('click', function(){
+    if (player2.paused) {
+        play();
+    } else {
+        pause();
+    }
+    
+});  
 }
 
 

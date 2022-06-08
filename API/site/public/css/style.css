@@ -491,3 +491,27 @@ padding-right: 5vw;
       margin-top: 0.5vh;
       width: 220%;
   }
+  .sessaocur3{
+      background-image: url("../assets/imgs/sessao3cur.png");
+      background-size: cover;
+      background-blend-mode: darken;
+      height: 140vh;
+      margin-top: 0.5vh;
+      width: 220%;
+      opacity: 150%;
+  }
+  #voltar{
+      color: white;
+  }
+  #voltar:hover{
+    transition: all 0.6s ease-in;
+    text-decoration: underline; 
+    text-decoration-style: solid;
+    font-size: x-large;
+    color: darkred;
+
+
+} 
+.card{
+    
+}

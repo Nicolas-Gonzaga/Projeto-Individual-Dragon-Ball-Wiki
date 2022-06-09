@@ -16,7 +16,7 @@
 
 </html>
 <header class="header">
-    <button onclick="musicahome()"></button>
+  
     <audio src="../assets/Músicas/musicahome.mp3" id="musicahome" preload loop></audio>
     <div class="container">
         <img src="../assets/imgs/logoo.png" id="i_imagem">
@@ -52,7 +52,7 @@
 
 <!--footer inicio-->
 <footer>
-
+Todos os Direitos Reservados - 2022
 </footer>
 <!--footer fim-->
 
@@ -93,9 +93,9 @@
                     console.log(json);
                     console.log(JSON.stringify(json));
 
-                    sessionStorage.EMAIL_USUARIO = json.email;
-                    sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.EMAIL_USUARIO = json.Email;
+                    sessionStorage.NOME_USUARIO = json.Nome;
+                    sessionStorage.ID_USUARIO = json.IdUsuario;
 
                     setTimeout(function () {
                         window.location = "../dashboard/dashboard.html";

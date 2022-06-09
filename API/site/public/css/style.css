@@ -156,7 +156,7 @@ main{
 
 .Sessao2{
     border-top: 5px solid white;
-    height: 80vh;
+    height: 110vh;
     width: 121%;
     background-image: url("../assets/imgs/sessao2.png");
     background-size: cover;
@@ -213,7 +213,7 @@ main{
 .texto3{
     width: 20vw;
     font-size: large;
-    font-family: Amiko;
+    font-family: Zilla Slab;
     padding-top: 2%;
 
 }
@@ -241,13 +241,16 @@ main{
 footer{
     position: fixed;
     bottom: 0;
-    background-color: rgba(218, 255, 6, 0.315);
-    color: #FFF;
+    background-color: rgba(218, 255, 6, 0.644);
+    color: rgb(5, 5, 5);
     width: 100%;
     height: 60px;    
     text-align: center;
     line-height: 100px;
+    font-family: Roboto;
+    font-weight: 900;
 }
+
 .sessaocadastro{
     display: flex;
     background: linear-gradient(rgba(250, 37, 9), #F27B35);
@@ -512,6 +515,56 @@ padding-right: 5vw;
 
 
 } 
+
 .card{
+    color: black;
+
     
+    
+}
+#cardhome{
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 35vh;
+    height:47.5vh;
+    opacity: 80%;
+    
+}
+#div_ki{
+    font-size: large;
+}
+.maincard{
+    font-size: medium ;
+    opacity: 100%;
+    font-weight: bolder;
+}
+#i_idade{
+    border-radius: 0 7px;
+    text-align: left;
+}
+#sel_opcoes{
+    border-radius: 0 10px;
+    cursor: pointer;
+}
+.TituloCard{
+    font-size: small;
+opacity: 100%;
+}
+#btn_home{
+    width:9vw;
+    font-size: x-small;
+    cursor: pointer;
+    opacity: 100%;
+}
+#btn_home:hover{
+    background-color: #f7955d;
+    transition: all 0.6s ease-in;
+    transform: scale(1.1);
+}
+.esfera{
+    height: 20px;
+    width: 20px;
 }

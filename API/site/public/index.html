@@ -1,65 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" type="Imagex/png" href="../assets/icon/icone.png">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Home</title>
 </head>
+
 <body>
     <header class="header">
         <div onclick="musicahome()" id="triangulo-para-direita"></div>
         <audio src="../assets/Músicas/musicahome.mp3" id="musicahome" preload loop></audio>
         <div class="container">
-        <img src="../assets/imgs/logoo.png" id="i_imagem">
-            
+            <img src="../assets/imgs/logoo.png" id="i_imagem">
+
             <nav class="navbar1">
-                <a  id="home" href="index.html" class="nav">Home </a> &nbsp; &nbsp;
-                <a  id="cadastro" href="cadastro.html"class="nav">Cadastro  </a> &nbsp; &nbsp;
-                <a  id="login" href="login.html"class="nav">Login  </a>
+                <a id="home" href="index.html" class="nav">Home </a> &nbsp; &nbsp;
+                <a id="cadastro" href="cadastro.html" class="nav">Cadastro </a> &nbsp; &nbsp;
+                <a id="login" href="login.html" class="nav">Login </a>
             </nav>
         </div>
     </header>
-    
+
     <main>
-        
-        <section class ="Sessao1"> 
+
+        <section class="Sessao1">
             <div id="background"></div>
-           <div class="textoprincipal"> A melhor fanpage de Dragon Ball!</div>
-           <br><br><br>
-        </div>
-        <div class="Texto1">
-        <a id="textosection1" href="Login.html"> Conheça todas as aventuras de Goku, um guerreiro formidável e como ele conseguiu todo o poder que possui atualmente! </a>
-        </div>
-    </section> 
-    <section class="Sessao2">
-        <div class="Texto2">   
-            Nossos Serviços
-            <div class="texto3">
-                Somos uma fanpage voltada totalmente ao anime Dragon Ball e 
-                buscamos trazer conteúdos de qualidade a você usuário!
+            <div class="textoprincipal"> A melhor fanpage de Dragon Ball!</div>
+            <br><br><br>
             </div>
-            <div class="card">
-               <h1 class="titulocadastro"> Veja qual o seu poder de luta!</h1>
-                <input placeholder="Insira a sua idade">
+            <div class="Texto1">
+                <a id="textosection1" href="Login.html"> Conheça todas as aventuras de Goku, um guerreiro formidável e
+                    como ele conseguiu todo o poder que possui atualmente! </a>
             </div>
-                
-        </div>
-            </section>       
+        </section>
+        <section class="Sessao2">
+            <div class="Texto2">
+                Nossos Serviços
+                <div class="texto3">
+                    Somos uma fanpage voltada totalmente ao anime Dragon Ball e
+                    buscamos trazer conteúdos de qualidade a você usuário!
+                </div>
+                <div class="card" id="cardhome">
+                    <h1 class="maincard"> Veja qual é o seu poder de luta!</h1>
+                    <span class="TituloCard">Insira sua idade</span> <br>
+                    <input placeholder="Idade" id="i_idade"><br>
+                    <span class="TituloCard">Qual arte-marcial você pratica?</span> <br>
+                    <select id="sel_opcoes">
+                        <option value="1">-- Selecione uma arte marcial -- </option>
+                        <option value="2">Taekwondo</option>
+                        <option value="3">Jiu-Jitsu</option>
+                        <option value="4">Muay-Thai</option>
+                        <option value="5">Capoeira</option>
+                        <option value="6">Boxe</option>
+                        <option value="7">Outras</option>
+                        <option value="8">Nenhuma</option>
+                    </select>
+                    <button class="button" id="btn_home" onclick="Calcular()">Calcular poder de luta</button>
+                    <div id="div_ki">
+                        <audio src=""></audio>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
-    
-    
-    
-<footer></footer>
-         
-      
+
+
+
+    <footer> Todos os Direitos Reservados - 2022  </footer>
+
+
 </body>
+
 </html>
 <script>
-    function musicahome(){
+    function musicahome() {
         const audio = document.getElementById('musicahome');
-                    audio.play();
+        audio.play();
+    }
+    function Calcular() {
+        var audio = new Audio('../assets/Músicas/8000.mp3');
+        var audio1 = new Audio('../assets/Músicas/memee.mp3');
+
+        var idade = Number(i_idade.value)
+        var luta = sel_opcoes.value
+        var conta_idade = idade * 60
+        var total_taekwondo = conta_idade * 10
+        var total_jiujitsu = conta_idade * 5
+        var total_muaythai = conta_idade * 9
+        var total_boxe = conta_idade * 8
+        var total_capoeira = conta_idade * 7
+        var total_outras = conta_idade * 4
+        var total = conta_idade
+        var frase = ""
+        var esfera = frase/1000
+        if (idade == 0 || luta == "0") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Preencha todos os campos para prosseguir!',
+
+            })
+            return false
+        } else if (idade<0 || idade >100){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Insira uma idade válida!',
+
+            })
+            return false
+        }
+        else if (luta == "2") {
+            frase = `${total_taekwondo}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+        }
+        else if (luta == "3") {
+            frase = `${total_jiujitsu}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+
+        } else if (luta == "4") {
+            frase = `${total_muaythai}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+        }
+        else if (luta == "5") {
+            frase = `${total_capoeira}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+        } else if (luta == "6") {
+            frase = `${total_boxe}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+
+        }
+        else if (luta == "7") {
+            frase = `${total_outras}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+
+        }
+        else if (luta == "8") {
+            frase = `${conta_idade}`
+            div_ki.innerHTML = `Seu poder de luta é de ${frase}<br>`
+
+        }
+        if (frase > 8000) {
+            audio.addEventListener('canplaythrough', function () {
+                audio.play();
+            });
+        }
+        else {
+            audio1.addEventListener('canplaythrough', function () {
+                audio1.play();
+            });
+        }
+        for (var p=1; p < frase/1000; p++){
+            
+            div_ki.innerHTML += `<img class="esfera" src="../assets/imgs/esfera.png">`
+        }
+
+
+
     }
 </script>

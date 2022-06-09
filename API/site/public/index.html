@@ -91,7 +91,7 @@
         var luta = sel_opcoes.value
         var conta_idade = idade * 60
         var total_taekwondo = conta_idade * 10
-        var total_jiujitsu = conta_idade * 5
+        var total_jiujitsu = conta_idade * 6
         var total_muaythai = conta_idade * 9
         var total_boxe = conta_idade * 8
         var total_capoeira = conta_idade * 7
@@ -107,7 +107,7 @@
 
             })
             return false
-        } else if (idade<0 || idade >100){
+        } else if (idade<0 || idade >=100){
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
